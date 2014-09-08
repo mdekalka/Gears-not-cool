@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<!--[if IE 8 ]>    <html class="ie8"> <![endif]-->
+<html lang="en">
+	<head>
+		<title>GearNotCool</title>
+		<meta  charset="utf-8" /> 
+		<link rel="stylesheet" href="reset.css" type="text/css" />
+		<link rel="stylesheet" href="style.css" type="text/css" />
+			<link rel="icon" type="image/png" href="img/fav.ico" />
+			<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+			<script type="text/javascript" src="js/jquery.localscroll.js"></script>
+			<script type="text/javascript" src="js/jquery.scrollto.js"></script>
+			<script type="text/javascript" src="js/placeholder.js"></script>
+		<script>
+		$(function($) {
+		 $.localScroll({
+		  duration: 1000,
+		  hash: false });
+		 });
+		</script>
+			
+		<script >
+			$(function(){
+			$(".search_text").textPlaceholder();
+			});
+			$(function(){
+			$("#name").textPlaceholder();
+			});
+			$(function(){
+			$("#mail").textPlaceholder();
+			});
+			$(function(){
+			$("#message").textPlaceholder();
+			});
+		</script> 
+		
+	</head>
+
+	<body >
+		<div id="nav">
+	    <div id="top">
+		<a href="#block"><img src="img/top.png" alt="TOP" /></a>
+		</div>
+		<div id="bot">
+		<a href="#block3"><img src="img/bot.png" alt="TOP" /></a>
+		</div>
+		</div>
+		<div id="container">
+		
+		<span id="block"></span>
+			<div id="before_header">
+				<div id="music">
+					<object id="music_id" type="application/x-shockwave-flash" data="http://gearnotcool.hol.es/uppod.swf"	height="45" width="300">
+					<param name="wmode" value="transparent" />
+					<param name="allowFullScreen" value="true" />
+					<param name="allowScriptAccess" value="always" />
+					<param name="movie"	value="http://gearnotcool.hol.es/uppod.swf" />
+					<param name="FlashVars" value="file=http://gearnotcool.hol.es/music/Calm.mp3&amp;swf=http://gearnotcool.hol.es/uppod.swf&amp;
+					w=300&amp;h=45&amp;time_seconds=0&amp;autoplay=0&amp;q=&amp;volume=70&amp;comment=""&amp;" /></object>
+				</div>
+				<form id="search">
+					<span><input  class="search_text" type="text" name="s" id="s" placeholder="search..."  /></span>
+					<span><input  class="go" type="submit" value="Find!"  /></span>
+				</form>
+			</div>
+			<div id="header">
+				<div id="logo">
+					<img src="img/tort.gif" alt="main logo" />
+				</div>
+				<div id="header_menu">
+					<ul>
+						<li><a href="#block" id="main" class="header_hover" ></a></li>
+						<li><a href="#block1" id="works" class="header_hover"></a></li>
+						<li><a href="#block2" id="about" class="header_hover"> </a></li>
+						<li><a href="#block3" id="contact" class="header_hover"></a></li>
+					</ul>
+				</div>
+			</div><!-- end of header-->
+			<div id="info">
+				<h1>HOWDY!</h1>
+				<h3>My nickname is piupiupiu and i try to do something when i don't play... Whatever! Who cares?</h3>
+				<div id="lights">
+				
+				</div>
+					
+			</div><!-- end of info -->
+			<div id="skills">
+				<div id="top_skills">
+					<span id="block1"></span>
+					<p><img src="img/table1.gif" alt="skills" /></p>
+					<h1>Skills + Fun</h1>
+					<span></span>
+				</div>
+				<div id="gears_left">
+					<img id="gear_top" src="img/small_gear1.png" alt="gear pic" />
+					<img id="gear_middle" src="img/big_gear1.png" alt="gear pic" />
+					<img id="gear_bot" src="img/small_gear1.png" alt="gear pic" />
+					<span id="css" class="skills_font" >css</span>
+					<span id="html" class="skills_font">html</span>
+					<span id="js" class="skills_font" >js</span>
+					<span class="invis" ></span>					
+				</div>	
+				<div id="content_slider">
+					<img src="slider_img/slider1.png" alt="slider fon" />
+					<div id="slider">
+						<div id="mask">
+							<ul id="image_container">
+							  <li><img src="slider_img/slider_pic1.png" alt="pic" /></li>
+							  <li><img src="slider_img/slider_pic2.png" alt="pic" /></li>
+							  <li><img src="slider_img/slider_pic3.png" alt="pic" /></li>
+							</ul>
+						</div>
+						<img src="slider_img/glass.png" id="glass" alt="pic" />
+			 
+						<ul id="dots">
+					  
+							 <li class="button1" onClick="changeImage(1)" ></li>
+							 <li class="button2" onClick="changeImage(2)" ></li>
+							 <li class="button3" onClick="changeImage(3)" ></li>
+						</ul>
+					  <img src="slider_img/left2.png" id="left_cl" class="clickers" alt="pic" onClick="prevImage()" />
+					  <img src="slider_img/right2.png" id="right_cl" class="clickers"  alt="pic" onClick="nextImage()" />
+					</div>
+				</div>
+				
+				<div id="mid_skills">
+					<span id="block2"></span>
+					<h1><span>Something i want to tell you</span></h1>
+					
+					<div class="post">
+					<span class="block2"></span>
+						 <div class="post_entry">
+							<div class="post_name">
+								<h1><a href="#">Post number one going there</a></h1>
+								<div class="post_top">
+									<span class="category">Posted in:<a href="#"><span> Category one</span></a></span>
+									<span class="date" >Date:<span> 04 September 2013</span></span>
+								</div>
+							</div>
+							<div class="post_content">
+								<img src="img/post_one.gif" alt="post picture" />
+								<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus augue nulla,
+									porta quis libero sed, sodales sagittis massa. Donec sit amet libero fermentum,
+									viverra tellus sed, consequat enim. Vestibulum a neque pellentesque, rutrum arcu non, 
+									amet ipsum pellentesque, interdum nulla in, tincidunt velit. Pellentesque habitant morbi
+									porta quis libero sed, sodales sagittis massa. Donec sit amet libero fermentum,
+									viverra tellus sed, consequat enim. Vestibulum a neque pellentesque, rutrum arcu non, 
+									amet ipsum pellentesque, interdum nulla in, tincidunt velit. Pellentesque habitant morbi
+									tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+								<a class="read_more" href="#">Read more</a>	
+							</div>
+							<div class="post_bot">
+								<span class="author" >Posted by:<span> piupiupiu</span></span>
+								<span class="comment" >Comments:<span> 10</span></span>
+							</div>
+							
+						 </div>
+					</div>
+					<div id="aside">
+						<ul>
+							<li class="aside_list" ><!-- <img class="marker" src="img/list_pic.png"  alt="marker_pic" /> --><a href="#">Category one</a></li>
+							<li class="aside_list"><!-- <img class="marker" src="img/list_pic.png"  alt="marker_pic" /> --><a href="#">Category two</a></li>
+							<li class="aside_list"><!-- <img class="marker" src="img/list_pic.png"  alt="marker_pic" /> --><a href="#">Category three</a></li>
+							<li class="aside_list"><!-- <img class="marker" src="img/list_pic.png"  alt="marker_pic" /> --><a href="#">Category four</a></li>
+							<li class="aside_list"><!-- <img class="marker" src="img/list_pic.png"  alt="marker_pic" /> --><a href="#">Category five</a></li>
+						</ul>	
+				    </div>
+					<div class="post">
+						 <div class="post_entry">
+							<div class="post_name">
+								<h1><a href="#">Post number two going there</a></h1>
+								<div class="post_top">
+									<span class="category">Posted in:<a href="#"><span> Category two</span></a></span>
+									<span class="date" >Date:<span> 05 September 2013</span></span>
+								</div>
+							</div>
+							<div class="post_content">
+								<img src="img/post_two.gif" alt="post picture" />
+								<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus augue nulla,
+									porta quis libero sed, sodales sagittis massa. Donec sit amet libero fermentum,
+									viverra tellus sed, consequat enim. Vestibulum a neque pellentesque, rutrum arcu non, 
+									amet ipsum pellentesque, interdum nulla in, tincidunt velit. Pellentesque habitant morbi
+									porta quis libero sed, sodales sagittis massa. Donec sit amet libero fermentum,
+									viverra tellus sed, consequat enim. Vestibulum a neque pellentesque, rutrum arcu non, 
+									amet ipsum pellentesque, interdum nulla in, tincidunt velit. Pellentesque habitant morbi
+									tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+								<a class="read_more" href="#">Read more</a>	
+							</div>
+							<div class="post_bot">
+								<span class="author" >Posted by:<span> piupiupiu</span></span>
+								<span class="comment" >Comments:<span> 3</span></span>
+							</div>
+							
+						 </div>
+					</div>
+					<div id="miracle">
+					</div>
+					<div class="post">
+						 <div class="post_entry">
+							<div class="post_name">
+								<h1><a href="#">Post number three going there</a></h1>
+								<div class="post_top">
+									<span class="category">Posted in:<a href="#"><span> Category three</span></a></span>
+									<span class="date" >Date:<span> 06 September 2013</span></span>
+								</div>
+							</div>
+							<div class="post_content">
+								<img src="img/post_three.gif" alt="post picture" />
+								<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus augue nulla,
+									porta quis libero sed, sodales sagittis massa. Donec sit amet libero fermentum,
+									viverra tellus sed, consequat enim. Vestibulum a neque pellentesque, rutrum arcu non, 
+									amet ipsum pellentesque, interdum nulla in, tincidunt velit. Pellentesque habitant morbi
+									porta quis libero sed, sodales sagittis massa. Donec sit amet libero fermentum,
+									viverra tellus sed, consequat enim. Vestibulum a neque pellentesque, rutrum arcu non, 
+									amet ipsum pellentesque, interdum nulla in, tincidunt velit. Pellentesque habitant morbi
+									tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+								<a class="read_more" href="#">Read more</a>	
+							</div>
+							<div class="post_bot">
+								<span class="author" >Posted by:<span> Leito</span></span>
+								<span class="comment" >Comments:<span> 12</span></span>
+							</div>
+							
+						 </div>
+					</div>
+				</div>
+			<div id="feedback_content">
+			
+				<div id="feedback">
+				<span id="block3"></span>
+				<p>Feedback form here &rarr;</p>
+				</div>
+				
+				<div id="feedback_form">
+				<form>
+					<div id="form_left">
+						<div class="feedback_name"><input id="name" type="text" name="s"  placeholder="Name" value="" size="20"  /></div>
+						<div class="feedback_mail"><input  id="mail" type="text" name="s1"  placeholder="Email" value="" size="20"  /></div>
+						<div class="feedback_submit"><input  type="submit" value="Send Mail" /></div>
+					</div>	
+					<div class="feedback_message"><textarea  id="message" placeholder="Message" rows="5" cols="30" name="message" ></textarea></div>
+				</form>	
+				</div>
+				
+				
+				
+			</div>
+			</div>
+			<div id="footer">
+				<h6 class="design" >design by Leito</h6>
+				<h6 class="coding" >codding/design by piupiupiu</h6>
+			</div>
+		</div><!-- end of container -->
+		
+		
+		
+	  <script>
+   
+      var secDuration = 5;
+      var image = 1;
+      var maxImages = 3;
+      var slider = document.getElementById('slider');
+      var timeout
+      
+     
+      function changeImage(requiredImage) {
+      
+       
+        if (!requiredImage && requiredImage != 0){ 
+          if(image < maxImages){
+            image++;
+          }
+          else{
+            image = 1;
+          }
+        }
+        else{ 
+          if(requiredImage > maxImages){
+            image = 1;
+          }
+          else if(requiredImage < 1){ 
+            image = maxImages;
+          }
+          else{
+            image = requiredImage; 
+          }
+        }
+       
+        slider.className = "image"+image;
+        
+      
+        clearTimeout(timeout)
+	
+        timeout = setTimeout("changeImage()",secDuration*1000);
+      }
+      
+
+      function nextImage(){
+        changeImage(image+1);
+      }
+      function prevImage(){
+        changeImage(image-1);
+      }
+      
+     changeImage(1);
+    </script>	
+	
+
+	
+	</body>
+</html>
